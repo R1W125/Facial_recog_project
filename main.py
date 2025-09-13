@@ -28,7 +28,8 @@ def send_email(name):
     msg["Subject"] = f"Face Recognized: {name}"
     msg["From"] = "riwazshrestha2005@gmail.com"
     msg["To"] = "riwazshrestha2005@gmail.com"
-
+    
+# Replace with your own email and password please
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
         smtp.login("riwazshrestha2005@gmail.com", "fubn ixmb jbfw gtnz")
         smtp.send_message(msg)
